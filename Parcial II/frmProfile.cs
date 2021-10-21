@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace Parcial_II
 {
-    public partial class frmAdmin : Form
+    public partial class frmProfile : MetroForm
     {
-        public frmAdmin()
+        public frmProfile()
         {
             InitializeComponent();
         }

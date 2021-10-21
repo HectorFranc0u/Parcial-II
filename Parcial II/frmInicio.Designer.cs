@@ -35,9 +35,9 @@ namespace Parcial_II
             this.txtPws = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.llbRegister = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@ namespace Parcial_II
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 450);
             this.panel1.TabIndex = 0;
@@ -59,7 +59,7 @@ namespace Parcial_II
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.ForeColor = System.Drawing.Color.Black;
             this.txtUser.Location = new System.Drawing.Point(318, 81);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(374, 20);
             this.txtUser.TabIndex = 1;
@@ -97,6 +97,25 @@ namespace Parcial_II
             this.label1.TabIndex = 4;
             this.label1.Text = "Inicio de Sesión";
             // 
+            // llbRegister
+            // 
+            this.llbRegister.AutoSize = true;
+            this.llbRegister.Location = new System.Drawing.Point(605, 360);
+            this.llbRegister.Name = "llbRegister";
+            this.llbRegister.Size = new System.Drawing.Size(87, 19);
+            this.llbRegister.TabIndex = 5;
+            this.llbRegister.TabStop = true;
+            this.llbRegister.Text = "Registrate ";
+            //
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(418, 360);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "¿No tienes un usuario?";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MidnightBlue;
@@ -107,25 +126,6 @@ namespace Parcial_II
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // llbRegister
-            // 
-            this.llbRegister.AutoSize = true;
-            this.llbRegister.Location = new System.Drawing.Point(605, 360);
-            this.llbRegister.Name = "llbRegister";
-            this.llbRegister.Size = new System.Drawing.Size(87, 19);
-            this.llbRegister.TabIndex = 5;
-            this.llbRegister.TabStop = true;
-            this.llbRegister.Text = "Registrate ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(418, 360);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "¿No tienes un usuario?";
             // 
             // frmInicio
             // 
@@ -141,7 +141,7 @@ namespace Parcial_II
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioDeSesión";

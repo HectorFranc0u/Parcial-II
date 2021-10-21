@@ -16,5 +16,6 @@ namespace Parcial_II
         {
             InitializeComponent();
         }
+
     }
 }

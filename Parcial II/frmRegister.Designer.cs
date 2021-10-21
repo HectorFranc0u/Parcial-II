@@ -48,7 +48,7 @@ namespace Parcial_II
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(18, 9);
+            this.label1.Location = new System.Drawing.Point(18, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 25);
@@ -150,7 +150,7 @@ namespace Parcial_II
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 519);
+            this.ClientSize = new System.Drawing.Size(732, 424);
             this.Controls.Add(this.btnCrearUser);
             this.Controls.Add(this.txtUserEmail);
             this.Controls.Add(this.label6);
@@ -168,8 +168,8 @@ namespace Parcial_II
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRegister";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.frmRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

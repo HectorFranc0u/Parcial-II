@@ -10,16 +10,13 @@ using System.Windows.Forms;
 using MetroFramework.Forms;
 namespace Parcial_II
 {
-    public partial class frmRegister : MetroForm
+    public partial class frmMenu : Form
     {
-        public frmRegister()
+        public frmMenu()
         {
             InitializeComponent();
         }
 
-        private void frmRegister_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
