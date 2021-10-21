@@ -92,7 +92,7 @@ namespace Parcial_II
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 227);
+            this.label4.Location = new System.Drawing.Point(12, 185);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(162, 19);
             this.label4.TabIndex = 5;
@@ -100,7 +100,7 @@ namespace Parcial_II
             // 
             // txtUsname
             // 
-            this.txtUsname.Location = new System.Drawing.Point(183, 224);
+            this.txtUsname.Location = new System.Drawing.Point(183, 182);
             this.txtUsname.Name = "txtUsname";
             this.txtUsname.Size = new System.Drawing.Size(190, 27);
             this.txtUsname.TabIndex = 6;
@@ -108,7 +108,7 @@ namespace Parcial_II
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(389, 227);
+            this.label5.Location = new System.Drawing.Point(389, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 19);
             this.label5.TabIndex = 7;
@@ -116,7 +116,7 @@ namespace Parcial_II
             // 
             // txtUspassword
             // 
-            this.txtUspassword.Location = new System.Drawing.Point(497, 224);
+            this.txtUspassword.Location = new System.Drawing.Point(497, 182);
             this.txtUspassword.Name = "txtUspassword";
             this.txtUspassword.Size = new System.Drawing.Size(190, 27);
             this.txtUspassword.TabIndex = 8;
@@ -124,7 +124,7 @@ namespace Parcial_II
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(179, 324);
+            this.label6.Location = new System.Drawing.Point(179, 257);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 19);
             this.label6.TabIndex = 9;
@@ -132,14 +132,14 @@ namespace Parcial_II
             // 
             // txtUserEmail
             // 
-            this.txtUserEmail.Location = new System.Drawing.Point(339, 321);
+            this.txtUserEmail.Location = new System.Drawing.Point(341, 254);
             this.txtUserEmail.Name = "txtUserEmail";
             this.txtUserEmail.Size = new System.Drawing.Size(190, 27);
             this.txtUserEmail.TabIndex = 10;
             // 
             // btnCrearUser
             // 
-            this.btnCrearUser.Location = new System.Drawing.Point(295, 394);
+            this.btnCrearUser.Location = new System.Drawing.Point(295, 310);
             this.btnCrearUser.Name = "btnCrearUser";
             this.btnCrearUser.Size = new System.Drawing.Size(173, 65);
             this.btnCrearUser.TabIndex = 11;
