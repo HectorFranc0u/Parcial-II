@@ -11,13 +11,11 @@ using MetroFramework.Forms;
 
 namespace Parcial_II
 {
-    public partial class frmProfile : MetroForm
+    public partial class frmUsers : Form
     {
-        public frmProfile()
+        public frmUsers()
         {
             InitializeComponent();
         }
-
-    
     }
 }

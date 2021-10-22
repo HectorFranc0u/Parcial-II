@@ -8,16 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
-
 namespace Parcial_II
 {
-    public partial class frmProfile : MetroForm
+    public partial class frmLogs : MetroForm
     {
-        public frmProfile()
+        public frmLogs()
         {
             InitializeComponent();
         }
-
-    
     }
 }
