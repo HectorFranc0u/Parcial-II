@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using MetroFramework.Forms;
 namespace Parcial_II
 {
-    public partial class frmLogs : MetroForm
+    public partial class frmLogs : Form
     {
         public frmLogs()
         {

@@ -16,7 +16,7 @@ namespace Parcial_II
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmProfile());
+            Application.Run(new frmUsers());
         }
     }
 }
