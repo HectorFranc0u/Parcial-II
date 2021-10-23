@@ -56,7 +56,7 @@ namespace Parcial_II
                 if (txtUser.Text == "admin" & txtPws.Text == "admin")
                 {
                     valor = 1;
-                    usuario = txtUser.Text;
+                    usuario = account._Usname;
                     tiempo = datetime;
                     MessageBox.Show(this, "Inicio de sesion como administrador exitoso!", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmMenu frmMenu = new frmMenu();
