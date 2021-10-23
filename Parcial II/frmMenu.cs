@@ -17,6 +17,27 @@ namespace Parcial_II
             InitializeComponent();
         }
 
-        
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            frmProfile frmProfile = new frmProfile();
+            frmProfile.Show();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            frmUsers frmUsers = new frmUsers();
+            frmUsers.Show();
+        }
+
+        private void btnLogs_Click(object sender, EventArgs e)
+        {
+            frmLogs frmLogs = new frmLogs();
+            frmLogs.Show();
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

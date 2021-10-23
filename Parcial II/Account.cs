@@ -16,6 +16,7 @@ namespace Parcial_II
         public string _UserRegisterdate { get; set; }
         public string _Usname { get; set; }
         public string _Uspassword { get; set; }
+        public int _TimeLoggedIn { get; set; }
 
         private Crud crud = new Crud();
 
@@ -26,10 +27,29 @@ namespace Parcial_II
             return crud.select(query);
         }
 
+        public MySqlDataReader getdata()
+        {
+            string query = "SELECT firstname,lastname,email,registerdate,ussername FROM account WHERE codUser = '"+ _UserID +"'";
+            return crud.select(query);
+        }
+
+        public MySqlDataReader getlogin()
+        {
+            string query = "SELECT * FROM account WHERE ussername = '" + _Usname + "' AND password = '" + _Uspassword + "'   ";
+            return crud.select(query);
+        }
+
         public void NewUser()
         {
             string query = "INSERT INTO account(firstname, lastname, email, registerdate, ussername, password)" +
                     "VALUES ('" + _UserFirstname + "', '" + _UserLastname + "', '" + _UserEmail + "', '" + _UserRegisterdate + "', '" + _Usname + "', '" + _Uspassword + "')";
+            crud.executeQuery(query);
+        }
+
+        public void setlog()
+        {
+            string query = "INSERT INTO userlog(codUser, username, timeLoggedIn)" +
+                    "VALUES ('" + _UserID + "', '" + _Usname + "', '" + _TimeLoggedIn + "')";
             crud.executeQuery(query);
         }
     }

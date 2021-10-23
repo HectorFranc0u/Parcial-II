@@ -51,7 +51,7 @@ namespace Parcial_II
             this.label1.Location = new System.Drawing.Point(18, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 25);
+            this.label1.Size = new System.Drawing.Size(219, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nuevo Registro ";
             // 
@@ -62,30 +62,30 @@ namespace Parcial_II
             this.label2.Location = new System.Drawing.Point(19, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(95, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
             // txtUserFirtsName
             // 
-            this.txtUserFirtsName.Location = new System.Drawing.Point(183, 95);
+            this.txtUserFirtsName.Location = new System.Drawing.Point(222, 95);
             this.txtUserFirtsName.Name = "txtUserFirtsName";
-            this.txtUserFirtsName.Size = new System.Drawing.Size(190, 27);
+            this.txtUserFirtsName.Size = new System.Drawing.Size(190, 32);
             this.txtUserFirtsName.TabIndex = 2;
             // 
             // txtUserLastName
             // 
-            this.txtUserLastName.Location = new System.Drawing.Point(497, 98);
+            this.txtUserLastName.Location = new System.Drawing.Point(553, 98);
             this.txtUserLastName.Name = "txtUserLastName";
-            this.txtUserLastName.Size = new System.Drawing.Size(190, 27);
+            this.txtUserLastName.Size = new System.Drawing.Size(190, 32);
             this.txtUserLastName.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(389, 98);
+            this.label3.Location = new System.Drawing.Point(418, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 19);
+            this.label3.Size = new System.Drawing.Size(98, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Apellido:";
             // 
@@ -94,31 +94,32 @@ namespace Parcial_II
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 185);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 19);
+            this.label4.Size = new System.Drawing.Size(204, 23);
             this.label4.TabIndex = 5;
             this.label4.Text = "Nombre de Usuario:";
             // 
             // txtUsname
             // 
-            this.txtUsname.Location = new System.Drawing.Point(183, 182);
+            this.txtUsname.Location = new System.Drawing.Point(222, 176);
             this.txtUsname.Name = "txtUsname";
-            this.txtUsname.Size = new System.Drawing.Size(190, 27);
+            this.txtUsname.Size = new System.Drawing.Size(190, 32);
             this.txtUsname.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(389, 185);
+            this.label5.Location = new System.Drawing.Point(418, 182);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 19);
+            this.label5.Size = new System.Drawing.Size(129, 23);
             this.label5.TabIndex = 7;
             this.label5.Text = "Contraseña:";
             // 
             // txtUspassword
             // 
-            this.txtUspassword.Location = new System.Drawing.Point(497, 182);
+            this.txtUspassword.Location = new System.Drawing.Point(553, 176);
             this.txtUspassword.Name = "txtUspassword";
-            this.txtUspassword.Size = new System.Drawing.Size(190, 27);
+            this.txtUspassword.PasswordChar = '*';
+            this.txtUspassword.Size = new System.Drawing.Size(190, 32);
             this.txtUspassword.TabIndex = 8;
             // 
             // label6
@@ -126,31 +127,32 @@ namespace Parcial_II
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(179, 257);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 19);
+            this.label6.Size = new System.Drawing.Size(198, 23);
             this.label6.TabIndex = 9;
             this.label6.Text = "Correo Electronico:";
             // 
             // txtUserEmail
             // 
-            this.txtUserEmail.Location = new System.Drawing.Point(341, 254);
+            this.txtUserEmail.Location = new System.Drawing.Point(383, 254);
             this.txtUserEmail.Name = "txtUserEmail";
-            this.txtUserEmail.Size = new System.Drawing.Size(190, 27);
+            this.txtUserEmail.Size = new System.Drawing.Size(190, 32);
             this.txtUserEmail.TabIndex = 10;
             // 
             // btnCrearUser
             // 
-            this.btnCrearUser.Location = new System.Drawing.Point(295, 310);
+            this.btnCrearUser.Location = new System.Drawing.Point(286, 336);
             this.btnCrearUser.Name = "btnCrearUser";
-            this.btnCrearUser.Size = new System.Drawing.Size(173, 65);
+            this.btnCrearUser.Size = new System.Drawing.Size(261, 65);
             this.btnCrearUser.TabIndex = 11;
             this.btnCrearUser.Text = "Crear Usuario";
             this.btnCrearUser.UseVisualStyleBackColor = true;
+            this.btnCrearUser.Click += new System.EventHandler(this.btnCrearUser_Click);
             // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 424);
+            this.ClientSize = new System.Drawing.Size(795, 424);
             this.Controls.Add(this.btnCrearUser);
             this.Controls.Add(this.txtUserEmail);
             this.Controls.Add(this.label6);
