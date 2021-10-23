@@ -29,22 +29,10 @@ namespace Parcial_II
         /// </summary>
         private void InitializeComponent()
         {
-            this.gtdLogs = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.gtdLogs = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.gtdLogs)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gtdLogs
-            // 
-            this.gtdLogs.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gtdLogs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gtdLogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gtdLogs.Location = new System.Drawing.Point(12, 108);
-            this.gtdLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtdLogs.Name = "gtdLogs";
-            this.gtdLogs.RowHeadersWidth = 51;
-            this.gtdLogs.Size = new System.Drawing.Size(1024, 417);
-            this.gtdLogs.TabIndex = 0;
             // 
             // label1
             // 
@@ -57,16 +45,26 @@ namespace Parcial_II
             this.label1.TabIndex = 1;
             this.label1.Text = "Logs:";
             // 
+            // gtdLogs
+            // 
+            this.gtdLogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gtdLogs.Location = new System.Drawing.Point(24, 103);
+            this.gtdLogs.Name = "gtdLogs";
+            this.gtdLogs.RowHeadersWidth = 51;
+            this.gtdLogs.RowTemplate.Height = 24;
+            this.gtdLogs.Size = new System.Drawing.Size(1007, 408);
+            this.gtdLogs.TabIndex = 2;
+            // 
             // frmLogs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.gtdLogs);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmLogs_Load_1);
@@ -77,8 +75,7 @@ namespace Parcial_II
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView gtdLogs;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView gtdLogs;
     }
 }
