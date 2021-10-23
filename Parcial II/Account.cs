@@ -16,7 +16,7 @@ namespace Parcial_II
         public string _UserRegisterdate { get; set; }
         public string _Usname { get; set; }
         public string _Uspassword { get; set; }
-        public int _TimeLoggedIn { get; set; }
+        public string _TimeLoggedIn { get; set; }
 
         private Crud crud = new Crud();
 

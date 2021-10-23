@@ -19,6 +19,13 @@ namespace Parcial_II
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string datetime = DateTime.Now.ToString("HH:mm:ss MM-dd");
+            Account account = new Account();
+            account._UserID = frmInicio.valor;
+            account._Usname = frmInicio.usuario;
+            account._TimeLoggedIn = frmInicio.tiempo + " - " + datetime;
+
+            account.setlog();
             this.Close();
         }
 
