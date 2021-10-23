@@ -14,9 +14,12 @@ namespace Parcial_II
     public partial class frmInicio : Form
     {
         public static int valor;
+        public static string usuario;
+        public static string tiempo;
         public frmInicio()
         {
             InitializeComponent();
+
         }
         private void llbRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -29,6 +32,8 @@ namespace Parcial_II
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string datetime = DateTime.Now.ToString("HH:mm:ss MM-dd");
+
             Account account = new Account();
 
             account._Usname = txtUser.Text;
@@ -50,7 +55,9 @@ namespace Parcial_II
             {
                 if (txtUser.Text == "admin" & txtPws.Text == "admin")
                 {
-                    valor = Convert.ToInt32(dataReader.GetValue(0));
+                    valor = 1;
+                    usuario = txtUser.Text;
+                    tiempo = datetime;
                     MessageBox.Show(this, "Inicio de sesion como administrador exitoso!", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmMenu frmMenu = new frmMenu();
                     frmMenu.Show();
@@ -59,6 +66,8 @@ namespace Parcial_II
                 else if (dataReader.Read())
                 {
                     valor = Convert.ToInt32(dataReader.GetValue(0));
+                    usuario = txtUser.Text;
+                    tiempo = datetime;
                     MessageBox.Show(this, "Inicio de sesion como usuario exitoso!", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     frmmenuus frmmenuus = new frmmenuus();
                     frmmenuus.Show();
@@ -68,6 +77,10 @@ namespace Parcial_II
                     MessageBox.Show(this, "error al iniciar sesion!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+
+            txtPws.Text = "";
+            txtUser.Text = "";
         }
     }
 }
+
