@@ -52,5 +52,10 @@ namespace Parcial_II
                     "VALUES ('" + _UserID + "', '" + _Usname + "', '" + _TimeLoggedIn + "')";
             crud.executeQuery(query);
         }
+        public MySqlDataReader getlogs()
+        {
+            string query = "SELECT codUser,username,timeLoggedIn FROM userlog";
+            return crud.select(query);
+        }
     }
 }
