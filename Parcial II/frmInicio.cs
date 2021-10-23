@@ -17,6 +17,7 @@ namespace Parcial_II
         public frmInicio()
         {
             InitializeComponent();
+
         }
         private void llbRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
