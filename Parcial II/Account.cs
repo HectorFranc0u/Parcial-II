@@ -16,7 +16,7 @@ namespace Parcial_II
         public string _UserRegisterdate { get; set; }
         public string _Usname { get; set; }
         public string _Uspassword { get; set; }
-        public int _TimeLoggedIn { get; set; }
+        public string _TimeLoggedIn { get; set; }
 
         private Crud crud = new Crud();
 
@@ -51,6 +51,12 @@ namespace Parcial_II
             string query = "INSERT INTO userlog(codUser, username, timeLoggedIn)" +
                     "VALUES ('" + _UserID + "', '" + _Usname + "', '" + _TimeLoggedIn + "')";
             crud.executeQuery(query);
+        }
+
+        public MySqlDataReader getlogs()
+        {
+            string query = "SELECT codUser,username,timeLoggedIn FROM userlog";
+            return crud.select(query);
         }
     }
 }

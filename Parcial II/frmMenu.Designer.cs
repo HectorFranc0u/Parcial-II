@@ -79,7 +79,7 @@ namespace Parcial_II
             // 
             this.btnUsers.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnUsers.Location = new System.Drawing.Point(460, 94);
-            this.btnUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(153, 74);
             this.btnUsers.TabIndex = 5;
@@ -91,7 +91,7 @@ namespace Parcial_II
             // 
             this.btnProfile.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnProfile.Location = new System.Drawing.Point(79, 94);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(4);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(153, 74);
             this.btnProfile.TabIndex = 6;
@@ -103,7 +103,7 @@ namespace Parcial_II
             // 
             this.btnLogs.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnLogs.Location = new System.Drawing.Point(79, 226);
-            this.btnLogs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogs.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogs.Name = "btnLogs";
             this.btnLogs.Size = new System.Drawing.Size(535, 96);
             this.btnLogs.TabIndex = 7;
@@ -124,12 +124,13 @@ namespace Parcial_II
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu ";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

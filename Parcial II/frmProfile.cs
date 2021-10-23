@@ -21,18 +21,27 @@ namespace Parcial_II
 
         private void frmProfile_Load(object sender, EventArgs e)
         {   
-            Account account = new Account();
-            account._UserID = frmInicio.valor;
-            MySqlDataReader data = account.getdata();
-
-            while (data.Read())
+            if (frmInicio.valor == 1)
             {
-                lblfname.Text = data.GetValue(0).ToString() + " " + data.GetValue(1).ToString();
-                lblemail.Text = data.GetValue(2).ToString();
-                lblreisterdate.Text = data.GetValue(3).ToString();
-                lblusername.Text = data.GetValue(4).ToString();
+                lblemail.Text = "Administrador@gmail.com";
+                lblfname.Text = "Administrador Admin";
+                lblusername.Text = "admin";
+                lblreisterdate.Text = "";
             }
+            else
+            {
+                Account account = new Account();
+                account._UserID = frmInicio.valor;
+                MySqlDataReader data = account.getdata();
 
+                while (data.Read())
+                {
+                    lblfname.Text = data.GetValue(0).ToString() + " " + data.GetValue(1).ToString();
+                    lblemail.Text = data.GetValue(2).ToString();
+                    lblreisterdate.Text = data.GetValue(3).ToString();
+                    lblusername.Text = data.GetValue(4).ToString();
+                }
+            }
         }
     }
 }

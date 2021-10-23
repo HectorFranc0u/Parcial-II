@@ -96,6 +96,7 @@ namespace Parcial_II
             this.Name = "frmmenuus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmmenuus";
+            this.Load += new System.EventHandler(this.frmmenuus_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
